@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NP/T+oIK10LoooZayKrLWcHHQCz9MP2YH+EYemP3TnSUK3Tw54kAwcfqGD7IOE9L+Tbr/UFD0YbSZniRd0yTng==",
+  "dgSpecHash": "RpfJi4P87391qkAfw+ZMx5+eiGh/bGANKadL6+O/6d5MQjisuH5gDociU+itq1AThmKXpkBM1PTO/r57lFgOcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lenovo\\source\\repos\\BackgroundServices\\BackgroundServices.csproj",
+  "projectFilePath": "G:\\BACKGROUND SERVICES WITH SIGNALR\\BackgroundServices  API\\BackgroundServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lenovo\\.nuget\\packages\\fromheaderattribute\\2.0.4\\fromheaderattribute.2.0.4.nupkg.sha512",
     "C:\\Users\\lenovo\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.4\\microsoft.aspnet.webapi.client.5.2.4.nupkg.sha512",

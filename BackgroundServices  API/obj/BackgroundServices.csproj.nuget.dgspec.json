@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lenovo\\source\\repos\\BackgroundServices\\BackgroundServices.csproj": {}
+    "G:\\BACKGROUND SERVICES WITH SIGNALR\\BackgroundServices  API\\BackgroundServices.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lenovo\\source\\repos\\BackgroundServices\\BackgroundServices.csproj": {
+    "G:\\BACKGROUND SERVICES WITH SIGNALR\\BackgroundServices  API\\BackgroundServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lenovo\\source\\repos\\BackgroundServices\\BackgroundServices.csproj",
+        "projectUniqueName": "G:\\BACKGROUND SERVICES WITH SIGNALR\\BackgroundServices  API\\BackgroundServices.csproj",
         "projectName": "BackgroundServices",
-        "projectPath": "C:\\Users\\lenovo\\source\\repos\\BackgroundServices\\BackgroundServices.csproj",
+        "projectPath": "G:\\BACKGROUND SERVICES WITH SIGNALR\\BackgroundServices  API\\BackgroundServices.csproj",
         "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lenovo\\source\\repos\\BackgroundServices\\obj\\",
+        "outputPath": "G:\\BACKGROUND SERVICES WITH SIGNALR\\BackgroundServices  API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -7,25 +7,29 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.VisualBasic;
 using Microsoft.AspNetCore.Http.HttpResults;
 using BackgroundServices;
+using BackgroundServices.Interface;
 
 public class RunService : BackgroundService
 {
     public static bool runService;
     private string[] messages { get; set; } // Array to store messages
+    private List<string> offers { get; set; }
     public string msg;
     private readonly ILogger<RunService> _logger;
+    private IHubContext<MessageHub, IMessageHubClient> _messageHub;
 
 
-    public RunService(ILogger<RunService> _logger)
+    public RunService(ILogger<RunService> _logger, IHubContext<MessageHub, IMessageHubClient> _messageHub)
     {
         this._logger = _logger;
+        this._messageHub = _messageHub;
     }
 
 
 
-    public void StartLogging(string[] message)
+    public void StartLogging(List<string> offers)
     {
-        this.messages = message;
+        this.offers = offers;
         runService = true;
 
     }
@@ -42,7 +46,7 @@ public class RunService : BackgroundService
         while (!stoppingToken.IsCancellationRequested)
         {
             _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-            if (messages != null)
+            if (offers != null)
             {
                 ManageUser();
 
@@ -53,12 +57,12 @@ public class RunService : BackgroundService
 
     public void ManageUser()
     {
-        Console.WriteLine($"Nr. of users {messages}");
-        foreach (var user in messages)
+        Console.WriteLine($"Nr. of users {offers}");
+        _messageHub.Clients.All.SendOffersToUser(offers);
+        foreach (var offer in offers)
         {
-            _logger.LogInformation($"USER YEA RHA {user}");
+            _logger.LogInformation($"USER YEA RHA {offer}");
 
-            Console.WriteLine($"{user}");
         }
     }
 
